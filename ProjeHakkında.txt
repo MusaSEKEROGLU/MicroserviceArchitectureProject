@@ -1,0 +1,67 @@
+MİCROSERVİCES PROJE YAPIMIZ VE KULLANILANLAR
+
+1-Shared.Library(ClassLibrary)(Tüm Microservislerde ortak kullanılan alanlar)
+* AutoMapper
+* Identity Server Framework(ORM)
+
+2-İDENTİTYSERVER MİCROSERVİCES.API(JWT)-Token dağıtmaktan görevli Microservis'dir.
+* Identity Server Framework(OpenIDConnect,OAuth2.0)-Hazır Template Githup-IdentityServer4
+* IdentityApi(Üyelik Sistemi)
+* Identity Server Framework(ORM)
+* SQL Server(Database)
+
+3-CATALOG MİCROSERVİCES.API
+* Entity Framework Core(ORM)
+* MongoDB(Database)
+
+4-PHOTOSTOCK MİCROSERVİCES.API
+* Identity Server Framework(ORM)
+
+5-BASKET MİCROSERVİCES.API
+* Entity Framework Core(ORM)
+* Redis(Database)
+* StackExchange.Redis(Kütüphane)
+
+6-DİSCOUNT MİCROSERVİCES.API
+* PostgreSQL(Database)
+* Dapper(ORM)
+* Dapper.Constrib(Kütüphane)
+* Npgsql(Kütüphane)
+
+7-ORDER MİCROSERVİCES.API(5 layer architectural project)
+* Domain Driven Design(DDD)
+* Entity Framework Core(ORM)
+* SQL Server(Database)
+* Cors Pattern(Kütüphane)
+* Bounded Context Mimarisi(ilgili alanları bir arada toplamak)
+* MediatR(Kütüphane)-Cors İmplementasyonu
+
+8-FAKEPAYMENT MİCROSERVİCES.API
+* Identity Server Framework(ORM)
+
+9-GATEWAY.API(Client'dan gelen isteği ilgili Microservise göndermekten görevlidir,
+aynı zamanda token doğrulama görevide vardır.)
+* Api Gateway
+* Ocelot Library(Kütüphane) 
+
+
+10-UI-WEB(ASP.NET CORE MVC)
+* ApiGateway üzerinden Microservislere istek yapabilme
+* IdentityServer tarafından Token ile doğrulan kullanıcıları Cookie üzerinden kontrol etme
+* Entity Framework Core(ORM)
+* Cookie Bazlı Auhentication,Authorization
+* Kullanıcı Kayıt
+* Kullanıcı Doğrulama
+* Kurslar üzerinde CRUD İşlemleri
+* Kurs satın alabilme
+* Ödeme İşlemleri
+
+
+EXTRA KULLANILAN ARAÇLAR
+
+*Docker kullanıldı
+*Portainer kullanıldı
+*DBeaver kullanıldı
+*Test(POSTMAN)
+
+  
